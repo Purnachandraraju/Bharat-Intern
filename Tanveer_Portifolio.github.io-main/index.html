@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS */
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #ffffff;
+      --background-color: #f1f2f6;
+      --text-color: #333;
+      --accent-color: #3498db;
+    }
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+    }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+    }
+
+    .jumbotron {
+      background-image:#ffffff;
+      background-size: cover;
+      background-position: center;
+      color: #c31414;
+      padding: 150px 0;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .pulse {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover .card-img-overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .certificate-card {
+      background-color: var(--secondary-color);
+      border: none;
+      border-radius: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .certificate-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .certificate-card .card-header {
+      background-color: #ffffff;
+      border-bottom: none;
+    }
+
+    .graphic {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4 fade-in">Raju's Portfolio</h1>
+      <p class="lead fade-in">I'm a web developer passionate about creating awesome websites.</p>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">About Me</h2>
+      <div class="row">
+        <div class="col-md-6 fade-in">
+          <img src="Mypic.jpeg" alt="Profile Image" class="img-fluid rounded-circle mb-3 pulse" style="width: 400px;height: 400px;">
+        </div>
+        <div class="col-md-6 fade-in" style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+          <p>Hi, I'm Tanveer,I Love using my creativity to solve problems and make things better.</p>
+          <p>I'm always looking for ways to innovate and make a differnce, and i am excited to share my work with you</p>
+          <div class="form-group">
+            <!-- <center><input type="submit" class="btn btn-primary btn-pill" name="Download" value="Download"></center> -->
+            <a href="Raju.jpg.jpeg" class="btn btn-primary btn-pill">download resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 fade-in">
+          <div class="card mb-4">
+            <img src="emotion.jfif" alt="project pic">
+            <div class="card-img-overlay d-flex flex-column justify-content-end">
+              <h5 class="card-title text-white">Clinical Data Analysis Management system
+              </h5>
+              <p class="card-text text-white">In this project we worked to store the patient details and disease details of patient
+              </p>
+            </div>
+          </div>
+          </div>
+  </section>
+
+
+
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Education</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 fade-in">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Bachelor's Degree in Computer Science</h5>
+              <p class="card-text">Sri Vasavi Engineering College</p>
+              <p class="card-text">CGPA:6.4</p>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Intermediate</h5>
+              <p class="card-text">Sri Chatinya JR College</p>
+              <p class="card-text">CGPA:8.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fade-in">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3 fade-in">
+          <form>
+            <div class="form-group">
+              <label for="Linked In">Linkedin:</label>
+                <a href="https://www.linkedin.com/in/chandra-raju-4451a2286/">https://www.linkedin.com/in/chandra-raju-4451a2286/</a>
+            </div>
+            <div class="form-group">
+              <label for="Github">Github:</label>
+              <a href="https://github.com/Purnachandraraju">https://github.com/Purnachandraraju</a>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <a href="mailto:purnachandraraju18@gmail.com">purnachandraraju18@gmail.com</a>
+            </div>
+            <div class="form-group">
+              <label for="Mobile no">Mobile No:</label>
+              <a href="tel:+91 95426262999">9705139567</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
